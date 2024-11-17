@@ -3,4 +3,15 @@
   <button (click)="authenticateSpotify()" class="get_started_btn--spotify">
     Login
   </button>
+
+  <div class="playlists">
+    <div *ngFor="let playlist of playlists">
+      <div (click)="selectPlaylist(playlist)" class="playlists-item">
+        <img [src]="playlist.images[0].url" alt="Playlist thumbnail" />
+        <div class="playlists-item-title">
+          {{ playlist.name }}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

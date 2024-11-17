@@ -4,3 +4,35 @@
   justify-content: center;
   align-items: center;
 }
+
+.playlists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    cursor: pointer;
+
+    &-title {
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+      height: 40px;
+      max-width: 200px;
+      padding: 0 8px;
+      margin-top: 6px;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
