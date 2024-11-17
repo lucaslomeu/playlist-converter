@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
-import {
-  AuthenticateResponse,
-  SpotifyService,
-} from './core/services/spotify/spotify.service';
-import { YoutubeService } from './core/services/youtube/youtube.service';
+import { RouterOutlet } from '@angular/router';
+
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
